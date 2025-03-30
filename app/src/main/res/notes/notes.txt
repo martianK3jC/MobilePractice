@@ -1,0 +1,16 @@
+Step-by-step guide to creating a new android project
+1. App Name
+2. Package Name
+3. Create new Project
+file -> new -> new project -> empty activity -> edit Name and Package Name (ignore the save location or the minimum sdk) -> Finish
+4. Setup new project
+ Open Gradle Scripts -> Click build.gradle.kts (Module: app) -> Change compile sdk to 35 -> save all -> sync now -> build -> rebuild all
+ in com.android.mobdev package -> right click -> new -> new activity -> empty view activity (change name with Pascal Casing format) -> Check Generate a Layout File -> Check Launcher Activity(Activity is the Main Activity) -> Click -> Finish
+ Change the "AppCompatActivity()" to "Activity()" -> (alt + enter) to import
+ delete ui theme package
+5. Create Android Virtual Device
+click Device Manager -> Create Virtual Device -> Small Phone -> x86 Images -> UpsideDownCake (API level: 34, Type: Google APIs) -> Next -> Finish
+6. Run the new project
+
+in the layout
+When adding id it should be attribute_name_name (example: button_login)
