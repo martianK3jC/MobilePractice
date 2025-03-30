@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:gravity="center_horizontal"
@@ -52,6 +51,15 @@
                 android:backgroundTint="#e0cbac"
                 android:id="@+id/button_login"
                 android:textColor="#7da73d"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="View List"
+                android:backgroundTint="#6997ba"
+                android:id="@+id/button_list_view"
+                android:textColor="#b1d1ca"
                 android:layout_marginHorizontal="20dp"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
