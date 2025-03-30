@@ -59,6 +59,27 @@
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="wrap_content"
+                android:text="Full name:"
+                android:textColor="#5d835b"
+                android:layout_marginHorizontal="2dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edit_text_fullname"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="#5d835b"
+                android:textColorHint="#5d835b"
+                android:hint="Enter fullname"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="4dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
                 android:text="Password:"
                 android:textColor="#5d835b"
                 android:layout_marginHorizontal="2dp"
@@ -95,22 +116,22 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button_login"
+            android:id="@+id/button_register"
             android:layout_width="match_parent"
-            android:text="Login"
+            android:text="Register Account"
+            android:backgroundTint="#99b355"
+            android:textColor="#3e4e49"
             android:textSize="15sp"
-            android:backgroundTint="#3e4e49"
-            android:textColor="#99b355"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="4dp"
             android:layout_height="wrap_content"/>
         <Button
-            android:id="@+id/button_register"
+            android:id="@+id/button_login"
             android:layout_width="match_parent"
-            android:text="Register"
-            android:backgroundTint="#99b355"
-            android:textColor="#3e4e49"
+            android:text="Go to Login"
             android:textSize="15sp"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="#99b355"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="4dp"
             android:layout_height="wrap_content"/>

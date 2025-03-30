@@ -9,10 +9,10 @@ fun Activity.toast(message: String){
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }
 
-fun EditText.toText(){
-
+fun EditText.toText(): String {
+    return this.text.toString()
 }
 
-fun EditText.isNotValid(): Boolean{
-    return this.text.isNullOrEmpty()
+fun EditText.isNotValid(): Boolean {
+    return this.text.toString().trim().isEmpty()
 }

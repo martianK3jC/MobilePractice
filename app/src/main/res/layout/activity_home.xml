@@ -27,7 +27,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:text="Welcome Home!"
+                android:text="Welcome Home"
                 android:textSize="60sp"
                 android:textColor="#be71a1"
                 android:layout_gravity="center_horizontal"
@@ -35,6 +35,25 @@
                 android:textAlignment="center"
                 android:layout_height="wrap_content"/>
 
+            <TextView
+                android:id="@+id/tv_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="User!"
+                android:textAlignment="center"
+                android:textColor="#f555"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Go back to Login"
+                android:backgroundTint="#e0cbac"
+                android:id="@+id/button_login"
+                android:textColor="#7da73d"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
     </FrameLayout>
