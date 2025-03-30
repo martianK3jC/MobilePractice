@@ -50,16 +50,28 @@
                 android:text="Go back to Login"
                 android:backgroundTint="#e0cbac"
                 android:id="@+id/button_login"
+                android:textSize="24sp"
                 android:textColor="#7da73d"
                 android:layout_marginHorizontal="20dp"
                 android:layout_height="wrap_content"/>
 
             <Button
                 android:layout_width="match_parent"
-                android:text="View List"
+                android:text="Simple list view"
                 android:backgroundTint="#6997ba"
-                android:id="@+id/button_list_view"
+                android:id="@+id/button_simple_list_view"
+                android:textSize="24sp"
                 android:textColor="#b1d1ca"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Custom list view"
+                android:backgroundTint="#448569"
+                android:id="@+id/button_custom_list_view"
+                android:textColor="#7da73d"
+                android:textSize="24sp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_height="wrap_content"/>
         </LinearLayout>

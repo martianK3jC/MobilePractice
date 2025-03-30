@@ -10,7 +10,7 @@
     tools:context=".LoginActivity">
     <ImageView
         android:layout_width="wrap_content"
-        android:src="@drawable/login_image_final"
+        android:src="@drawable/login_image"
         android:scaleType="fitXY"
         android:layout_height="250dp"/>
 
