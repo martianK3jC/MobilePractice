@@ -14,6 +14,7 @@ class HomeActivity : Activity() {
 
         val button_login = findViewById<Button>(R.id.button_login)
         val tv_fullname = findViewById<TextView>(R.id.tv_fullname)
+        val button_list_view = findViewById<Button>(R.id.button_list_view)
 
         // Get fullname from application storage
         tv_fullname.text = (application as MyApplication).fullname
@@ -21,6 +22,11 @@ class HomeActivity : Activity() {
         // Handle login button click
         button_login.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        button_list_view.setOnClickListener {
+            val intent = Intent(this, SimpleListViewActivity::class.java)
             startActivity(intent)
         }
 
