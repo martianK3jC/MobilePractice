@@ -26,7 +26,15 @@ class CustomListViewActivity : Activity() {
             Flower("Lily", "Lilium", R.drawable.lily)
         )
 
-        val adapter = FlowerCustomListViewAdapter(this, flowerList)
+        val adapter = FlowerCustomListViewAdapter(
+            this,
+            flowerList,
+            onClick = {flower ->
+                toast("${flower.flowerName} is cliked!")
+            }, onLongClick = {flower ->
+                toast("${flower.flowerName} is long cliked!")
+            }
+        )
         listView.adapter = adapter
     }
 }

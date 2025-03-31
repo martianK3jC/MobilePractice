@@ -10,18 +10,19 @@ import android.widget.TextView
 import com.android.mobilepractice.R
 import com.android.mobilepractice.data.Flower
 
-class FlowerCustomListViewAdapter(private val context: Context,
-                                  private val flowerList: List<Flower>) : BaseAdapter(){
+class FlowerCustomListViewAdapter(
+    private val context: Context,
+    private val flowerList: List<Flower>,
+    private val onClick: (Flower) -> Unit,
+    private val onLongClick: (Flower) -> Unit
+) : BaseAdapter(){
     //IMPLEMENT THE MEMBERS
+
     //size of list
     override fun getCount(): Int = flowerList.size
 
-
-
-
     //get specific item
     override fun getItem(position: Int): Any = flowerList[position]
-
 
     //get item id
     override fun getItemId(position: Int): Long = position.toLong()
@@ -38,13 +39,19 @@ class FlowerCustomListViewAdapter(private val context: Context,
         val scientificFlowerName = view.findViewById<TextView>(R.id.text_view_scientific_flowername)
 
         //set data/value
-        val flowers = flowerList[position]
-        flowerPic.setImageResource(flowers.photoRes)
-        flowerName.setText("${flowers.flowerName}")
-        scientificFlowerName.setText("${flowers.scientificFlowerName}")
+        val flower = flowerList[position]
+        flowerPic.setImageResource(flower.photoRes)
+        flowerName.setText("${flower.flowerName}")
+        scientificFlowerName.setText("${flower.scientificFlowerName}")
 
+        view.setOnClickListener {
+            onClick(flower)
+        }
+
+        view.setOnLongClickListener {
+            onLongClick(flower)
+            true
+        }
         return view;
     }
-
-
 }
