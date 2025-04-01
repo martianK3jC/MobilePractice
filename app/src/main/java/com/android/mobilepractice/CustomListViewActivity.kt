@@ -30,9 +30,9 @@ class CustomListViewActivity : Activity() {
             this,
             flowerList,
             onClick = {flower ->
-                toast("${flower.flowerName} is cliked!")
+                toast("${flower.flowerName} is clicked!")
             }, onLongClick = {flower ->
-                toast("${flower.flowerName} is long cliked!")
+                toast("${flower.flowerName} is long clicked!")
             }
         )
         listView.adapter = adapter
