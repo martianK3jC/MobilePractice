@@ -18,6 +18,7 @@ class HomeActivity : Activity() {
         val button_custom_list_view = findViewById<Button>(R.id.button_custom_list_view)
         val button_food_list = findViewById<Button>(R.id.button_food_list)
         val button_instrument = findViewById<Button>(R.id.button_instrument_custom_list_view)
+        val button_movie = findViewById<Button>(R.id.button_movie_recycler_view)
         // Get fullname from application storage
         tv_fullname.text = (application as MyApplication).fullname
 
@@ -45,6 +46,11 @@ class HomeActivity : Activity() {
 
         button_instrument.setOnClickListener {
             val intent = Intent(this, InstrumentCustomListViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        button_movie.setOnClickListener {
+            val intent = Intent(this, MovieRecyclerViewActivity::class.java)
             startActivity(intent)
         }
 
